@@ -1,0 +1,203 @@
+[{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "reviews",
+        "model": "genre"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "reviews",
+        "model": "category"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "reviews",
+        "model": "comment"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "reviews",
+        "model": "review"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "reviews",
+        "model": "title"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "8y3bu2aktjj7k8wy5itxwh917nkpkrbk",
+    "fields": {
+        "session_data": "YmQzOTk1ZmY1ZWNiYWRlOTUxMDg4MTFjYjY4ODczOGViZjQxMmQ4ZTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIyOGEyNWY3YjFkYzhiMmI3ZjI2NzkwOGVlZDIzNjMyN2M0NWUzYmQ4In0=",
+        "expire_date": "2022-09-22T18:57:25.717Z"
+    }
+}, {
+    "model": "reviews.category",
+    "pk": 1,
+    "fields": {
+        "name": "Category1",
+        "slug": "Category1"
+    }
+}, {
+    "model": "reviews.category",
+    "pk": 2,
+    "fields": {
+        "name": "Category2",
+        "slug": "Category2"
+    }
+}, {
+    "model": "reviews.genre",
+    "pk": 1,
+    "fields": {
+        "name": "ganre1",
+        "slug": "ganre1"
+    }
+}, {
+    "model": "reviews.genre",
+    "pk": 2,
+    "fields": {
+        "name": "ganre2",
+        "slug": "ganre2"
+    }
+}, {
+    "model": "reviews.title",
+    "pk": 1,
+    "fields": {
+        "name": "title1",
+        "year": 1235,
+        "category": 1,
+        "description": "rfdgdfgdfg",
+        "genre": [1]
+    }
+}, {
+    "model": "reviews.user",
+    "pk": 1,
+    "fields": {
+        "last_login": "2022-09-08T18:57:25.714Z",
+        "is_superuser": true,
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-09-08T18:22:38.409Z",
+        "username": "roma",
+        "email": "roma@wef.ru",
+        "first_name": "",
+        "last_name": "",
+        "bio": "",
+        "role": "user",
+        "password": "pbkdf2_sha256$150000$Q8eDYvaeL8VF$poLY/EA3KP8gKlPQBEcze9DxNmTbVKMqYj/VLKbhKDY=",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "reviews.review",
+    "pk": 1,
+    "fields": {
+        "author": 1,
+        "text": "345rtgdfg",
+        "pub_date": "2022-09-08T19:00:15.659Z",
+        "title": 1,
+        "score": 3
+    }
+}, {
+    "model": "reviews.comment",
+    "pk": 1,
+    "fields": {
+        "author": 1,
+        "text": "dfgdf345",
+        "pub_date": "2022-09-08T19:00:26.981Z",
+        "review": 1
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2022-09-08T18:57:45.179Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "ganre1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2022-09-08T18:57:51.476Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "ganre2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2022-09-08T18:58:09.130Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Category1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2022-09-08T18:58:15.228Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Category2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2022-09-08T19:00:02.808Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "1",
+        "object_repr": "Title object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2022-09-08T19:00:15.660Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "2022-09-08 19:00:15.659629+00:00 | roma | 345rtgdfg",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2022-09-08T19:00:26.981Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "2022-09-08 19:00:26.981014+00:00 | roma | dfgdf345",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}]
