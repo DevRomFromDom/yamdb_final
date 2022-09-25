@@ -158,4 +158,4 @@ docker-compose down -v
 
 - [Евгений Пермяков](https://github.com/Dexie7)
 
-https://github.com/DevRomFromDom/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+![example workflow](https://github.com/DevRomFromDom/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
