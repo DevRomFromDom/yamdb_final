@@ -2,7 +2,6 @@ from django.core.exceptions import ValidationError
 from django.core.validators import RegexValidator
 from django.utils import timezone
 
-
 SIGNUP_ERROR_MESSAGE = 'Ошибка, имя me зарезервировано системой.'
 
 

@@ -1,20 +1,9 @@
 from rest_framework import serializers
+from reviews.models import Category, Comment, Genre, Review, Title, User
+from reviews.validators import username_validator
 
-from api_yamdb.settings import (
-    EMAIL_LENGTH,
-    USERNAME_LENGTH,
-    CONFIRMATION_CODE_LENGTH)
-from reviews.models import (
-    Category,
-    Comment,
-    Genre,
-    Review,
-    Title,
-    User
-)
-from reviews.validators import (
-    username_validator)
-
+from api_yamdb.settings import (CONFIRMATION_CODE_LENGTH, EMAIL_LENGTH,
+                                USERNAME_LENGTH)
 
 REVIEW_ERROR_MESSAGE = "Уже есть ревью на это произведение."
 

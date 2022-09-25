@@ -1,20 +1,14 @@
-from django.contrib.auth.models import AbstractUser
-from django.core.validators import (MaxValueValidator,
-                                    MinValueValidator
-                                    )
-from django.db import models
-
 from collections import namedtuple
 
-from api_yamdb.settings import (EMAIL_LENGTH,
-                                USERNAME_LENGTH,
-                                FIRST_NAME_LENGTH,
-                                LAST_NAME_LENGTH,
-                                PASSWORD_LENGTH
-                                )
-from .validators import (
-    username_validator, year_validator)
+from django.contrib.auth.models import AbstractUser
+from django.core.validators import MaxValueValidator, MinValueValidator
+from django.db import models
 
+from api_yamdb.settings import (EMAIL_LENGTH, FIRST_NAME_LENGTH,
+                                LAST_NAME_LENGTH, PASSWORD_LENGTH,
+                                USERNAME_LENGTH)
+
+from .validators import username_validator, year_validator
 
 ROLES = namedtuple('ROLES_NAME', 'user moderator admin')(
     'user', 'moderator', 'admin')
