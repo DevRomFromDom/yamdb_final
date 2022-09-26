@@ -65,7 +65,6 @@ jobs:
           echo DEBUG=${{ secrets.DEBUG }} >> .env
           echo SECRET_KEY=${{ secrets.SECRET_KEY }} >> .env
           sudo docker-compose up -d --build
-          sudo docker compose up --force-recreate --build -d
           sudo docker compose exec web python manage.py migrate --no-input
           sudo docker compose exec web python manage.py collectstatic --no-input
   send_message:
