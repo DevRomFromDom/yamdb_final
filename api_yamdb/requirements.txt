@@ -11,3 +11,6 @@ pytest-django==4.4.0
 pytest-pythonpath==0.7.3
 packaging==21.3
 sorl-thumbnail==12.7.0
+attrs==21.4.0
+certifi==2021.10.8
+charset-normalizer==2.0.12
